@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Person } from '../model/person.interface';
 
 @Component({
   selector: 'app-persona',
@@ -6,8 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./persona.component.css']
 })
 export class PersonaComponent {
-  nombre: string = 'David';
-    apellido: string = 'sanchez';
-    edad: number = 25;
 
+  @Input() person: Person;
+  @Input() index: number;
+  constructor() { }
+  ngOnInit() { }
 }
