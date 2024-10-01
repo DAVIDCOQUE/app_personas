@@ -18,8 +18,6 @@
             <button type="submit" class="btn btn-primary" (click)="add_person()">Add Person</button>
         </div>
     </form>
-    <app-persona *ngFor="let personElement of people; let i = index" 
-    [person]="personElement" 
-    [index]="i">
+    <app-persona *ngFor="let personElement of people; let i = index" [person]="personElement" [index]="i">
     </app-persona>
 </div>
